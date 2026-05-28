@@ -119,7 +119,7 @@ resource "aws_security_group" "alb" {
 
 resource "aws_security_group" "web" {
   name        = "${var.environment}-sg-web"
-  description = "Permite tráfico HTTP desde el ALB y SSH"
+  description = "Permite trafico HTTP desde el ALB y SSH"
   vpc_id      = aws_vpc.main.id
 
   ingress {
