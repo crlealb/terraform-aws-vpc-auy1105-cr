@@ -91,7 +91,7 @@ resource "aws_route_table_association" "public_2" {
 
 resource "aws_security_group" "alb" {
   name        = "${var.environment}-sg-alb"
-  description = "Permite tráfico HTTP entrante al ALB desde Internet"
+  description = "Permite trafico HTTP entrante al ALB desde Internet"
   vpc_id      = aws_vpc.main.id
 
   ingress {
